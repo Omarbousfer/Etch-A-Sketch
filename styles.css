@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Gorditas', cursive;
+}
+
+body {
+    background-color: #E5E5CB;
+}
+
+/* header */
+
+header {
+    background-color: #D5CEA3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    height: 120px;
+}
+
+header h1 {
+    color: #1A120B;
+    font-weight: 700;
+    font-size: 4em;
+}
+
+
+
+/* Define the CSS styles for the divs */
+
+.grid-item {
+    width: calc(100% / 16); /* 100% divided by the number of columns */
+    height: calc(100% / 16); /* 100% divided by the number of rows */
+    background-color: white;
+    float: left;
+    border: 1px solid gray;
+  }
+  
+  /* Add a hover effect to change the color of the divs */
+  .grid-item:hover {
+    background-color: black;
+  }
+  
+  /* Add a border around the grid container */
+  #grid-container {
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 650px;
+    height: 650px;
+    box-shadow: 5px 5px 10px #ccc;
+  }
+
+  /* Add a transition effect to the grid items */
+.grid-item {
+    transition: background-color 1s ease;
+  }
+  
+  /* Add margin and padding to the grid container */
+  #grid-container {
+    padding: 10px;
+  }
+  
+  #parameters-container {
+    background-color: #D5CEA3;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    margin: 20px auto;
+    height: 150px;
+    border-radius: 20px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #clear-button {
+    background-color: #3C2A21;
+    color: #E5E5CB;
+    border-style: none;
+    padding: 15px 22px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.5em;
+  }
+  #clear-button:hover {
+    background-color: #1A120B;
+  }
+
+  /* Add a responsive layout for smaller screens */
+  @media (max-width: 600px) {
+    #grid-container {
+      width: 90%;
+    }
+  }
